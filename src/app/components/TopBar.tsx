@@ -16,7 +16,7 @@ export default function TopBar() {
         <VscArrowSmallRight size={28} />
         <p className="flex ml-3 borderColor border border-solid rounded-md text-sm w-[500px] bg-[#1f1f1f] py-[1px] items-center gap-1 justify-center">
           <VscSearch />
-          Guillermo Ramos Vega
+          Guillermo Ramos Vega.
         </p>
       </div>
       <div className="flex justify-end grow gap-2 items-center pr-2">
