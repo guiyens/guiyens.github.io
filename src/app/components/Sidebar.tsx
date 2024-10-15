@@ -9,6 +9,7 @@ import {
   VscChevronRight,
   VscJson,
   VscSettingsGear,
+  VscFilePdf,
 } from "react-icons/vsc";
 import { TbBrandTypescript } from "react-icons/tb";
 import { IoIosInformationCircleOutline } from "react-icons/io";
@@ -17,7 +18,7 @@ import { IoFolder } from "react-icons/io5";
 import { FaSass } from "react-icons/fa6";
 
 import { ProjectFile } from "../hooks/useFiles";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 
 export const fileIcons = (size: number) => ({
   ts: <TbBrandTypescript size={size} />,
@@ -133,10 +134,25 @@ export default function Sidebar(props: {
   setOPenFile: (name: string, parent?: ProjectFile) => void;
   setCodeTheme: Dispatch<SetStateAction<string>>;
   codeThemeSelected: string;
+  isPanelSettingsActive: boolean;
+  setIsPanelSettingsActive: Dispatch<SetStateAction<boolean>>;
+  isMenuDisplayed: boolean;
+  setIsMenuDisplayed: Dispatch<SetStateAction<boolean>>;
+  dimensions: {
+    width: number;
+    height: number;
+  };
 }) {
-  const { files, setOPenFile, setCodeTheme, codeThemeSelected } = props;
-  const [isPanelSettingsActive, setIsPanelSettingsActive] =
-    useState<boolean>(false);
+  const {
+    files,
+    setOPenFile,
+    setCodeTheme,
+    codeThemeSelected,
+    isPanelSettingsActive,
+    setIsPanelSettingsActive,
+    isMenuDisplayed,
+    setIsMenuDisplayed,
+  } = props;
 
   // useEffect(() => {
   //   document.body.addEventListener("click", () => {
@@ -144,11 +160,25 @@ export default function Sidebar(props: {
   //   });
   // }, []);
 
+  function openCvPdfEs() {
+    window.open("/GuillemroRamos_CV_En.pdf", "_blank");
+  }
+  function openCvPdfEn() {
+    window.open("/GuillemroRamos_CV_Es.pdg", "_blank");
+  }
+
   return (
-    <aside className="w-[350px] shrink-0 borderColor border-r flex">
+    <aside
+      className={`transition-all duration-1000 shrink-0 borderColor overflow-hidden border-r flex ${
+        isMenuDisplayed ? "w-[350px]" : "w-[47px]"
+      }`}
+    >
       <div className="borderColor border-r h-full text-[#868686] flex flex-col justify-between">
         <div className="flex flex-col items-center w-[47px]">
-          <div className="text-white border-l-4 border-solid border-[#0278D4] w-[47px] py-3">
+          <div
+            className="text-white border-l-4 border-solid border-[#0278D4] w-[47px] py-3"
+            onClick={() => setIsMenuDisplayed(!isMenuDisplayed)}
+          >
             <VscFiles size={23} className="mx-auto" />
           </div>
           <div className="py-3">
@@ -272,6 +302,24 @@ export default function Sidebar(props: {
                   </React.Fragment>
                 );
               })}
+              <div
+                className={`flex items-center gap-1 pl-5 py-[2px] hover:bg-[#1f1f1f] cursor-pointer`}
+                onClick={() => openCvPdfEn()}
+              >
+                <span className="text-[13px] flex items-center gap-1">
+                  <VscFilePdf />
+                  GuillemroRamos_CV_En.pdf
+                </span>
+              </div>
+              <div
+                className={`flex items-center gap-1 pl-5 py-[2px] hover:bg-[#1f1f1f] cursor-pointer`}
+                onClick={() => openCvPdfEs()}
+              >
+                <span className="text-[13px] flex items-center gap-1">
+                  <VscFilePdf />
+                  GuillemroRamos_CV_En.pdf
+                </span>
+              </div>
             </div>
           </section>
         </section>

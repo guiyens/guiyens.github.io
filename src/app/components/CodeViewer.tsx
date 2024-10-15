@@ -14,12 +14,12 @@ export default function CodeViewer(props: {
   const codeThemeObj = themes[codeThemeTransform as keyof typeof themes];
 
   return (
-    <section className="bg-[#1f1f1f] h-[calc(100vh-70px)] visor overflow-auto">
+    <section className="bg-[#1f1f1f] h-[calc(100vh-90px)] visor overflow-auto">
       <SyntaxHighlighter
         language={language}
         style={codeThemeObj}
         showLineNumbers={true}
-        wrapLongLines={true}
+        wrapLinesManually={true}
       >
         {code!}
       </SyntaxHighlighter>

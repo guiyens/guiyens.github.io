@@ -13,7 +13,7 @@ export default function Tabs(props: {
 }) {
   const { files, closeFile, setOPenFile } = props;
   return (
-    <section className="h-8 flex">
+    <section className="h-8 flex w-full overflow-x-auto">
       {files.map((file) => {
         const { isOpen } = file;
         return (

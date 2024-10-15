@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? "/guiyens.github.io" : "",
-  basePath: isProd ? "/guiyens.github.io" : "",
+  assetPrefix: isProd ? process.env.DEPLOYED_GITHUB_PATH : "",
+  basePath: isProd ? process.env.DEPLOYED_GITHUB_PATH : "",
   output: "export",
 };
 
