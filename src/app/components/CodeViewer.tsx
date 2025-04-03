@@ -19,7 +19,6 @@ export default function CodeViewer(props: {
         language={language}
         style={codeThemeObj}
         showLineNumbers={true}
-        wrapLinesManually={true}
       >
         {code!}
       </SyntaxHighlighter>

@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+        ⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀        ==================================================================================
+        ⠀⠀⠀⠀⣠⣧⠷⠆⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀                
+        ⠀⠀⣐⣢⣤⢖⠒⠪⣭⣶⣿⣦⠀⠀⠀⠀⠀⠀⠀         ⠀⣿⣿⣿⣿⣿⣿  ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⠀  ⣿⣿⣿⣿⣿⣿  ⣿⣿⣿⣿⣿⠀⠀  ⣿⣿⣿⣿⣿⣿  ⣿⣿⠀⠀⠀⠀⠀⠀⣿⣿
+        ⠀⢸⣿⣿⣿⣌⠀⢀⣿⠁⢹⣿⡇⠀⠀⠀⠀⠀⠀         ⣿⣿⠀⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿⠀⠀⠀⠀  ⠀⣿⣿⠀⠀⠀⠀⣿⣿⠀ 
+        ⠀⢸⣿⣿⣿⣿⣿⡿⠿⢖⡪⠅⢂⠀⠀⠀⠀⠀⠀         ⣿⣿⠀⣿⣿⣿⣿  ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⠀  ⣿⣿⣿⣿⣿⠀  ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿⣿⣿⣿⠀  ⠀⠀⣿⣿⠀⠀⣿⣿⠀⠀   
+        ⠀⠀⢀⣔⣒⣒⣂⣈⣉⣄⠀⠺⣿⠿⣦⡀⠀⠀⠀         ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⠀  ⣿⣿⠀⠀⠀⣿⣿  ⣿⣿⠀⠀⠀⠀  ⠀⠀⠀⣿⣿⣿⣿⠀⠀⠀                    
+        ⠀⡴⠛⣉⣀⡈⠙⠻⣿⣿⣷⣦⣄⠀⠛⠻⠦⠀⠀         ⣿⣿⣿⣿⣿⣿⠀  ⣿⣿⣿⣿⣿⣿⣿  ⣿⣿  ⣿⣿⣿⣿⣿⣿  ⣿⣿⣿⣿⣿⣿  ⣿⣿⣿⣿⣿⣿  ⣿⣿⣿⣿⣿⠀⠀  ⣿⣿⣿⣿⣿⣿  ⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀          
+        ⡸⠁⢾⣿⣿⣁⣤⡀⠹⣿⣿⣿⣿⣿⣷⣶⣶⣤⠀  
+        ⡇⣷⣿⣿⣿⣿⣿⡇⠀⣿⣿⣿⣿⣿⣿⡿⠿⣿⡀        ===================================================================================
+        ⡇⢿⣿⣿⣿⣟⠛⠃⠀⣿⣿⣿⡿⠋⠁⣀⣀⡀⠃         
+        ⢻⡌⠀⠿⠿⠿⠃⠀⣼⣿⣿⠟⠀⣠⣄⣿⣿⡣⠀         HELLO! I’M GUILLERMO RAMOS VEGA, AND WELCOME TO MY WEB DEVELOPER PORTFOLIO. 
+        ⠈⢿⣶⣤⣤⣤⣴⣾⣿⣿⡏⠀⣼⣿⣿⣿⡿⠁⠀         This is a conceptual project I created to demonstrate my skills as a web developer. 
+        ⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⠀⠀⣩⣿⡿⠋⠀⠀⠀         It is probably not easy to understand if you're not a technical person. If that's the case, 
+        ⠀⠀⠀⠀⠈⠙⠛⠿⠿⠿⠇⠀⠉⠁⠀⠀⠀⠀⠀         you can download my CV in PDF format from the project explorer sidebar (on the left side).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+        The concept of this website is to showcase my skills, expertise, and what I do on a typical workday (such as writing, testing, 
+        and reviewing code), all within a structure similar to a typical web front-end project in an IDE. 
+        However, I didn’t want to use a real instance of VSC (in this case). Instead, I created a clone of VSC with the basic 
+        functionality to suit my purpose.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+        === ABOUT THE VSC CLONE ===
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+        What I tried to clone from the original VSC is the following: 
+        - The main UI interface 
+        - Functionality: 
+            + Open and close files: Open from files explorer in the left sidebar clicking on the file name. Close from the x icon the top tabs. 
+            + Active files from top tabs: Clicking on the top tabs 
+            + Open and close the Explorer sidebar: Clicking on the first icon in the icons bar. 
+            + Show different code languages: Just opening different files you can see code in different languages. 
+            + Change the code editor theme: You can choose theme clicking in the Wheel icon in the bottom left corner, and selecting the theme.
+        
+          === ABOUT THE 'FAKE' PROJECT ===
 
-## Learn More
+        As I mentioned, the idea is to showcase my skills, expertise... within the typical web front-end project structure in an IDE. 
+        But that's it. This is not compilable code; it's close, but not quite there.
 
-To learn more about Next.js, take a look at the following resources:
+        For my purpose, I defined a class with my name at the root of the project (GuillermoRamosVega.ts), 
+        which could serve as the entry point for the project.
+        In this class, you’ll find key information about me. The properties in this class are organized by interfaces, 
+        giving you an idea of the roles I’ve had in the past on a development team.
+        
+        However, to make it more readable, I extracted some static data from this class and placed it in JSON files within the 'data' folder. 
+        For instance, if you want to check my work experience, you can open the 'workingExperience.json' file in the data folder.
+        Additionally, I tried to reference other typical files found in a front-end project, such as package.json, README.md, 
+        .gitignore, .scss, etc.
+        
+        === ABOUT THE REAL PROJECT ===
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+        This project is built with the following technologies: 
+            - React 19: I use components, hooks, and reactivity from this framework. 
+            - TypeScript: I prefer to write code with types, which is why I use TypeScript. 
+            - Tailwind 3.4: While it's not my favorite, it provided me with development speed. 
+            - react-syntax-highlighter: Used to display code and apply syntax highlighting to code colors."
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+        I HOPE YOU ENJOY IT!
+        Feel free to contact me (by mail or linkedin) if you want to know more about me.

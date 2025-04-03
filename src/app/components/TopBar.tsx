@@ -13,8 +13,12 @@ export default function TopBar(props: { screenWidth: number }) {
   return (
     <section className="borderColor border-b border-solid h-9 flex w-screen">
       <div className="flex w-[90%] justify-center items-center pl-24">
-        {screenWidth > 768 && <VscArrowSmallLeft size={28} />}
-        {screenWidth > 768 && <VscArrowSmallRight size={28} />}
+        {screenWidth > 768 && (
+            <>
+              <VscArrowSmallLeft size={28} />
+              <VscArrowSmallRight size={28} />
+            </>
+        )}
         <p className="flex ml-3 borderColor border border-solid rounded-md text-sm w-[500px] bg-[#1f1f1f] py-[1px] items-center gap-1 justify-center">
           <VscSearch />
           Guillermo Ramos Vega.
